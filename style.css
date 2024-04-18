@@ -22,7 +22,8 @@
 
   animation: rotate 2s infinite linear reverse;
 }
-.parent h1 {
+.parent h2 {
+  animation: rotate 1s infinite linear;
 }
 @keyframes rotate {
   0% {
