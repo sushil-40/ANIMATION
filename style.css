@@ -31,7 +31,7 @@
   left: 50px;
   top: 50px;
 
-  animation: circle 3s infinite linear;
+  animation: circle 3s infinite cubic-bezier(0.89, 0, 0, 1.04) 2s alternate;
 }
 @keyframes circle {
   0% {
