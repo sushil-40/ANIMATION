@@ -13,12 +13,31 @@
 .parent {
   background: black;
   color: white;
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  animation: square 4s infinite linear;
+}
+@keyframes square {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .ball {
@@ -31,7 +50,7 @@
   left: 50px;
   top: 50px;
 
-  animation: circle 3s infinite cubic-bezier(0.89, 0, 0, 1.04) 2s alternate;
+  animation: circle 3s infinite linear;
 }
 @keyframes circle {
   0% {
